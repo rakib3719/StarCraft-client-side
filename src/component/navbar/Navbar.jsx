@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const nav = <div className="lg:flex text-lg font-poppins">
     
@@ -11,8 +11,9 @@ const nav = <div className="lg:flex text-lg font-poppins">
 
     </div>
 const Navbar = () => {
+
     return (
-        <div   className="navbar z-10 relative">
+        <div   className="navbar  z-10 relative">
         <div className="navbar bg-base-100">
  <div className="navbar-start">
    <div className="dropdown">
@@ -50,7 +51,7 @@ const Navbar = () => {
 <div className="navbar-end  flex items-center">
 
  <button  className="btn text-white bg-[#4F847B]">  Log in </button>
- <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button>
+<Link  to='/registar'> <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button></Link>
 
 
 </div>

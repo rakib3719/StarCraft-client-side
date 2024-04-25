@@ -6,3 +6,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.loginbg{
+    background-image: url('./assets/img/loginbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+   
+  }
+  .login{
+    box-sizing: border-box;
+  border-radius: 27px;
+  background: linear-gradient(134.42deg, rgba(201, 201, 201, 0.8) 1.927%,rgba(196, 196, 196, 0.1) 100%);
+  opacity: 0.9;
+  }
+  .regbg {
+    background-image: url('./assets/elevated-view-laptop-earphones-crumpled-papers-pencil-blank-spiral-notepad-frame-black-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+   
+  }

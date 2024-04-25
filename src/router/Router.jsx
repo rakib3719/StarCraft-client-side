@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../root/Root";
+import Registar from "../registar/Registar";
 
 const router = createBrowserRouter([
 
@@ -10,8 +11,8 @@ const router = createBrowserRouter([
         errorElement:<p>404</p>,
         children:[
 {
-    path:'/h',
-    element:<p>this is</p>
+   path:'/registar',
+   element:<Registar></Registar>
 }
 
 
