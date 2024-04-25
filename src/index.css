@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 .loginbg{
-    background-image: url('./assets/img/loginbg.png');
+    background-image: url('./assets/loginbg.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

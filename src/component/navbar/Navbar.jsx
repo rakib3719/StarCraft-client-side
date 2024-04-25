@@ -49,8 +49,8 @@ const Navbar = () => {
 
 
 <div className="navbar-end  flex items-center">
-
- <button  className="btn text-white bg-[#4F847B]">  Log in </button>
+<Link  to='/login'>
+ <button  className="btn text-white bg-[#4F847B]">  Log in </button></Link>
 <Link  to='/registar'> <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button></Link>
 
 
