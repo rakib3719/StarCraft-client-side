@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../../../provider/AuthProvider";
+import Swal from "sweetalert2";
+
 
 
 const AddCraft = () => {
@@ -25,7 +27,32 @@ console.log(user);
         
         const productInfo = {    email, user_name ,items_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price};
         
-        console.log(productInfo);}
+        console.log(productInfo);
+      fetch('http://localhost:5000/add_craft',{
+
+      method:'POST',
+   headers: {
+
+    'content-type' : 'application/json'
+   },
+   body: JSON.stringify(productInfo)
+      })
+      .then(res => res.json())
+      .then(data => {console.log(data)
+      if(data.insertedId){
+        Swal.fire({
+          title: 'Successfully Added Items!',
+          text: 'Thank You',
+          icon: 'success',
+       
+        })
+        form.reset()
+        
+      }
+      
+      })
+      
+      }
         
     return (
         <div   className="addBg py-24">
@@ -199,7 +226,7 @@ console.log(user);
   
   </div>
 
-  <input type="number" name="time" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+  <input type="text" name="time" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
   <div className="label">
   
   </div>
@@ -214,8 +241,8 @@ console.log(user);
 
 <select name="stock" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
 <option value=""></option>
-<option value="yes">  In stock </option>
-<option value="no">  Made to Order </option>
+<option value="In Stoc">  In stock </option>
+<option value="Made to Order">  Made to Order </option>
 
 </select>
 

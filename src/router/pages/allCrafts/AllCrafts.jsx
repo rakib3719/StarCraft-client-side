@@ -2,7 +2,7 @@
 
 const AllCrafts = () => {
     return (
-        <div>
+        <div >
            This is all crafts section 
         </div>
     );
