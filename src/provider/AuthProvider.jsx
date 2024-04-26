@@ -7,7 +7,7 @@ export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState({})
-    const [loader, setLoader] = useState(false)
+    const [loader, setLoader] = useState(true)
 
 
     const googleProvider = new GoogleAuthProvider()
@@ -44,7 +44,7 @@ const logOut = ()=>{
 useEffect(()=>{
 
 const unSUbscribe = onAuthStateChanged(auth, (currentUser)=>{
-
+setLoader(false)
 setUser(currentUser)
 setLoader(false)
 

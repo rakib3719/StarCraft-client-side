@@ -15,9 +15,9 @@ const nav = <div className="lg:flex text-lg font-poppins">
     
 <li>    <NavLink  to='/' >  Home </NavLink></li>
 
-<li>    <NavLink  to='/update_profile' > All Art & craft Items </NavLink>  </li>
-<li>    <NavLink  to='/investment' >  Add Craft Item </NavLink></li> 
-<li>    <NavLink  to='/investment' >  My Art&Craft List </NavLink></li> 
+<li>    <NavLink  to='/all_crafts' > All Art & craft Items </NavLink>  </li>
+<li>    <NavLink  to='/add_crafts' >  Add Craft Item </NavLink></li> 
+<li>    <NavLink  to='/my_crafts' >  My Art&Craft List </NavLink></li> 
 
 
     </div>
