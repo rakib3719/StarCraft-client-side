@@ -1,19 +1,42 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+import { FaUser } from "react-icons/fa";
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
+import { useState } from 'react';
+
+
+
+
+
 
 const nav = <div className="lg:flex text-lg font-poppins">
     
 <li>    <NavLink  to='/' >  Home </NavLink></li>
 
-<li>    <NavLink  to='/update_profile' > All Art & craft </NavLink>  </li>
-<li>    <NavLink  to='/investment' >  Add Craft </NavLink></li> 
+<li>    <NavLink  to='/update_profile' > All Art & craft Items </NavLink>  </li>
+<li>    <NavLink  to='/investment' >  Add Craft Item </NavLink></li> 
 <li>    <NavLink  to='/investment' >  My Art&Craft List </NavLink></li> 
 
 
     </div>
 const Navbar = () => {
+const {user, logOut} = useContext(AuthContext)
+const logOuthandle = ()=>{
+logOut()
+.then(result => {
+  console.log(result);
+})
+.catch(error => {
+  console.log(error);
+})
+}
+const [isOpen, setIsOpen] = useState(false)
+
 
     return (
-        <div   className="navbar  z-10 relative">
+        <div   className="navbar w-[96%] md:w-[90%] mx-auto mx-w-[1220px]  z-10 relative">
         <div className="navbar bg-base-100">
  <div className="navbar-start">
    <div className="dropdown">
@@ -24,9 +47,9 @@ const Navbar = () => {
        {nav}
      </ul>
    </div>
-   <a className="  text-[16px] sm:text-2xl font-bold font-playFair -ml-3 sm:-ml-0"> StarCraft </a>
+   <a className="  text-[16px] sm:text-2xl font-bold font-playFair -ml-4 sm:-ml-0"> StarCraft </a>
  </div>
- <div className="navbar-center hidden lg:flex">
+ <div className={!user? "navbar-center hidden -mr-36 lg:flex" : "navbar-center hidden mr-24 lg:flex"}>
    <ul className="menu menu-horizontal px-1">
 
        {nav}
@@ -48,13 +71,59 @@ const Navbar = () => {
 </div> 
 
 
-<div className="navbar-end  flex items-center">
-<Link  to='/login'>
- <button  className="btn text-white bg-[#4F847B]">  Log in </button></Link>
-<Link  to='/registar'> <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button></Link>
+{
 
+
+    !user ? <div className="navbar-end   flex items-center">
+    <Link  to='/login'>
+     <button  className="btn w-[74px]  text-white bg-[#4F847B]">  Log In </button></Link>
+    <Link  to='/registar'> <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button></Link>
+    
+    
+    </div>: <div>
+
+{
+          user.photoURL ?       <img 
+          
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Click me!"
+          onMouseEnter={() => setIsOpen(true)}
+          onClick={() => setIsOpen(false)} 
+          
+          src={user.photoURL} className="w-10 sm:w-12 mt-2 rounded-full h-10 sm:h-12 border-2 border-orange-600" alt="" /> :<FaUser className="sm:text-3xl " 
+          
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Click me!"
+          onMouseEnter={() => setIsOpen(true)}
+          onClick={() => setIsOpen(!isOpen)}
+
+
+           ></FaUser> 
+}
+
+
+
+<Tooltip
+  id="my-tooltip"
+  clickable={true}
+  content={
+
+<div >
+
+<h1 className="font-bold font-raleway">{user.displayName}</h1>
+<button onClick={logOuthandle} className="bg-[#847B4F] font-bold border-none text-white btn w-full mt-2 "> Log Out </button>
 
 </div>
+
+  }
+  isOpen={isOpen}
+/>
+
+    </div>
+
+}
+
+
 
 
 

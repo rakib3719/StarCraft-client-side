@@ -1,19 +1,66 @@
 import { Link } from "react-router-dom";
 import {  FaGoogle, FaTwitter } from "react-icons/fa";
-
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
+  const {login,  loginWithTwiter,   loginWithGoogle} = useContext(AuthContext)
+
+  const googleLogin = ()=> {
+    loginWithGoogle()
+    .then(result => {
+        console.log(result);
+        toast("Login Successfully")
+        // setTimeout(()=> { navigate(currentLocation.state)}, 1000)
+    })
+    .catch(error => {
+        toast.error(error.message)
+    })
+}
+
+const twiterLogin = ()=> {
+  loginWithTwiter()
+  .then(result => {
+      console.log(result);
+      toast("Login Successfully")
+      // setTimeout(()=> { navigate(currentLocation.state)}, 2000)
+  })
+  .catch(error => {
+      toast.error(error.message)
+  })
+}
     const loginHandle = e => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        login(email, password)
+        .then(result => {
+            console.log(result);
+            toast("Login Successfully")
+        
+            // setTimeout(()=> { navigate(currentLocation.state)}, 2000)
+        })
+        .catch(error => {
+            console.log(error.message);
+          
+            let storeError=[]
+            let errorLetter=error.message.split(' ')[2].split('')
+            for (let i = 6; i < errorLetter.length-2; i++) {
+             
+             storeError.push(errorLetter[i])
+         
+             
+            }
+        
+            error.message=="Firebase: Error (auth/invalid-credential)." ? toast.error( "Invalid Email Or Password"): storeError ? toast.error(storeError.join('')) : toast.error(error.message)
+        })
     }
     return (
         <div  className="loginbg pt-20 pb-20">
       
-
+<ToastContainer></ToastContainer>
       <div className="login mx-auto w-[80%] md:w-1/2 md:ml-auto p-8 text-white backdrop-blur-3xl md:backdrop-blur-none md:mr-16 ">
 
       <form onSubmit={loginHandle} >
@@ -53,8 +100,8 @@ const Login = () => {
 
 
 
-<button  className="btn justify-center flex gap-2 py-2 items-center bg-[#357488] sm:max-w-xs sm:w-auto  rounded-full w-full  hover:bg-[#4595ae] mt-2 text-white px-10 mr-3" > <FaGoogle></FaGoogle>  Goggle </button>
-<button  className="btn sm:w-auto justify-center flex gap-2 py-2 items-center  bg-blue-900 px-10 w-full mt-2 sm:max-w-xs  font-bold rounded-full">  <FaTwitter></FaTwitter>
+<button onClick={googleLogin} className="btn justify-center flex gap-2 py-2 items-center bg-[#357488] sm:max-w-xs sm:w-auto  rounded-full w-full  hover:bg-[#4595ae] mt-2 text-white px-10 mr-3" > <FaGoogle></FaGoogle>  Goggle </button>
+<button onClick={twiterLogin} className="btn sm:w-auto justify-center flex gap-2 py-2 items-center  bg-blue-900 px-10 w-full mt-2 sm:max-w-xs  font-bold rounded-full">  <FaTwitter></FaTwitter>
 
 Twitter
 </button>
