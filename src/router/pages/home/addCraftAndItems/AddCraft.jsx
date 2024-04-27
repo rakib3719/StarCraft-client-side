@@ -142,16 +142,15 @@ console.log(user);
 <option value=""></option>
 <option value="Wooden Furniture & Sculptures"> 1.Wooden Furniture & Sculptures
  </option>
-<option value=" Wooden Home Decor"> 2. Wooden Home Decor
+<option value="Wooden Home Decor"> 2. Wooden Home Decor
  </option>
-<option value="  Wooden Utensils and Kitchenware"> 3.  Wooden Utensils and Kitchenware
+<option value="Wooden Utensils and Kitchenware"> 3. Wooden Utensils and Kitchenware
  </option>
-<option value="  Jute Home Decor"> 4.  Jute Home Decor
+<option value="Jute Home Decor"> 4. Jute Home Decor
  </option>
-<option value="   Jute Kitchenware & utensils"> 5.   Jute Kitchenware & utensils
+<option value="Jute Kitchenware & utensils"> 5. Jute Kitchenware & utensils
  </option>
-<option value="   Jute and wooden jewellery
-"> 6.   Jute and wooden jewellery
+<option value="Jute and wooden jewellery"> 6. Jute and wooden jewellery
 
  </option>
 

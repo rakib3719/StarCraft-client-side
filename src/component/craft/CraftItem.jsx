@@ -18,8 +18,8 @@ const CraftItem = ({craftData}) => {
 <p> Proccessing Time: {prosessing_time} </p>
 </div>
 {/* */}
-    <div className="card-actions justify-end font-raleway">
-     <Link   to={`http://localhost:5173/details/${_id}`}> <button  className="btn text-white text-center bg-[#847B4F] w-full">View Details</button></Link>
+    <div className=" font-raleway">
+     <Link   to={`http://localhost:5173/details/${_id}`}> <button  className="btn text-white text-center  bg-[#847B4F] w-full">View Details</button></Link>
     </div>
   </div>
 </div> 

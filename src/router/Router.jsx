@@ -9,6 +9,7 @@ import MyCrafts from "./pages/MyCrafts/MyCrafts";
 import AllCrafts from "./pages/allCrafts/AllCrafts";
 import Details from "./pages/viewDetails/Details";
 import UpdateItem from "./pages/updateItem/UpdateItem";
+import CatagoryItems from "./pages/catagoryItems/CatagoryItems";
 
 const router = createBrowserRouter([
 
@@ -67,6 +68,15 @@ element:<PrivateRouteer>
     <UpdateItem></UpdateItem>
 </PrivateRouteer>,
 loader:({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+},
+
+{
+    // http://localhost:5000/catagory_items/Jute%20and%20wooden%20jewellery
+
+    path:'/catagory_items/:category_name',
+    element: <CatagoryItems></CatagoryItems>,
+loader:({params})=> fetch(`http://localhost:5000/catagory_items/${params.category_name}`)
+
 }
 
 
