@@ -8,8 +8,8 @@ const CraftItem = ({craftData}) => {
     return (
         <div>
            <div className="card bg-base-100 border-2 p-4">
-  <figure><img src={photo} className='w-[100%] rounded-xl h-[300px]'  /></figure>
-  <div className="card-body font-raleway ">
+  <figure><img src={photo} className='w-[100%] rounded-xl h-[200px]'  /></figure>
+  <div className="mt-4 font-raleway ">
 <div className='h-[240px] sm:h-[200px] md:h-[220px] space-y-2 '>
 <h2 className="card-title text-2xl"> {items_name} </h2>
     <p className='font-medium font-work-sense'>  {catagory}</p>
