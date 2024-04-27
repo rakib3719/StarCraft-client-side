@@ -66,8 +66,7 @@ path:'/update/:id',
 element:<PrivateRouteer>
     <UpdateItem></UpdateItem>
 </PrivateRouteer>,
-  loader:({params})=> fetch(`http://localhost:5000/update/${params.id}`)
-
+loader:({params})=> fetch(`http://localhost:5000/details/${params.id}`)
 }
 
 

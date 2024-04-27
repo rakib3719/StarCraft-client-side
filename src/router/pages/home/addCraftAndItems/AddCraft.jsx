@@ -55,6 +55,8 @@ console.log(user);
       }
         
     return (
+
+      
         <div   className="addBg py-24">
 
         <div  className="add-form-bg w-[80%] mx-auto p-8 ">

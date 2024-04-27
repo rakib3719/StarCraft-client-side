@@ -5,7 +5,8 @@ import { CgShutterstock } from "react-icons/cg";
 import { FcRating } from "react-icons/fc";
 import { MdSystemUpdateAlt } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -16,7 +17,7 @@ const MyCraftCard = ({craftsData, deleteHandle})=> {
     console.log(craftsData);
     const {items_name, photo , _id, stock_status,  customization, rating,  price} =craftsData;
 
-
+const navigate = useNavigate()
   
     return (
       <div>
@@ -37,7 +38,9 @@ const MyCraftCard = ({craftsData, deleteHandle})=> {
 <hr  className='mt-4'/>
     <div className=" flex mt-4 justify-between gap-2">
 
- <button  className="btn font-poppoins w-1/2 bg-[#4F847B] text-white flex items-center gap-2">  <MdSystemUpdateAlt /> Update</button>
+ <button onClick={()=>{
+    navigate(`/update/${_id}`)
+ }} className="btn font-poppoins w-1/2 bg-[#4F847B] text-white flex items-center gap-2">  <MdSystemUpdateAlt /> Update</button>
 
 
       <button onClick={()=>deleteHandle(_id)} className="btn font-poppoins w-1/2 bg-orange-600 text-white flex items-center gap-2">   <MdDeleteForever /> Delete</button>
