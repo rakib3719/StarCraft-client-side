@@ -1,9 +1,10 @@
 
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const CraftItem = ({craftData}) => {
     console.log(craftData);
-    const {items_name, photo , stock_status, prosessing_time,  catagory, price}  = craftData
+    const {items_name, photo , _id, stock_status, prosessing_time,  catagory, price}  = craftData
     return (
         <div>
            <div className="card bg-base-100 border-2 p-4">
@@ -16,9 +17,9 @@ const CraftItem = ({craftData}) => {
 <p>{stock_status}</p>
 <p> Proccessing Time: {prosessing_time} </p>
 </div>
-
+{/* */}
     <div className="card-actions justify-end font-raleway">
-      <button  className="btn text-white text-center bg-[#847B4F] w-full">View Details</button>
+     <Link   to={`http://localhost:5173/details/${_id}`}> <button  className="btn text-white text-center bg-[#847B4F] w-full">View Details</button></Link>
     </div>
   </div>
 </div> 

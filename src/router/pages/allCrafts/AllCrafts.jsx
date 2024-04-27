@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const AllCrafts = () => {
@@ -38,11 +39,10 @@ fetch('http://localhost:5000/craft')
             <td>{alldata.price}</td>
             <td>{alldata.stock_status}</td>
     
-      <td><button  className="rounded  py-2 px-2 text-white text-center bg-[#847B4F]  sm:px-5 sm:py-3 ">View Details</button></td>
+      <td>  <Link  to={`http://localhost:5173/details/${alldata._id}`} ><button  className="rounded  py-2 px-2 text-white text-center bg-[#847B4F]  sm:px-5 sm:py-3 ">View Details</button></Link> </td>
           </tr>)
     }
-    
-    
+
     
      
     </tbody>

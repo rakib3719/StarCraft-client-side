@@ -78,8 +78,7 @@ const [isOpen, setIsOpen] = useState(false)
     <Link  to='/login'>
      <button  className="btn w-[74px]  text-white bg-[#4F847B]">  Log In </button></Link>
     <Link  to='/registar'> <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button></Link>
-    
-    
+  
     </div>: <div>
 
 {
