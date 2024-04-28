@@ -10,11 +10,20 @@ import { RxCrossCircled } from "react-icons/rx";
 
 const Details = () => {
 const craftData= useLoaderData()
-    console.log(craftData);
+
     const {items_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price} = craftData;
     return (
         <div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
-     
+     {
+            craftData.length < 1 && <div className="text-center flex mt-16 justify-center w-[100%]">
+
+
+<span className="loading loading-bars loading-xs"></span>
+<span className="loading loading-bars loading-sm"></span>
+<span className="loading loading-bars loading-md"></span>
+<span className="loading loading-bars loading-lg"></span>
+                </div>
+            }
 
 <div className="flex gap-8  border-2 px-4 rounded-xl py-8">
 

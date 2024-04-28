@@ -49,6 +49,19 @@ const deleteHandle = (id) => {
         <div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
          <h1  className="text-center text-3xl font-raleway font-bold"> My Crafts List </h1>
 
+
+         {
+            craftsData.length < 1 && <div className="text-center flex mt-16 justify-center w-[100%]">
+
+
+<span className="loading loading-bars loading-xs"></span>
+<span className="loading loading-bars loading-sm"></span>
+<span className="loading loading-bars loading-md"></span>
+<span className="loading loading-bars loading-lg"></span>
+                </div>
+            }
+
+
 <div className="grid mt-8 grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 ">
 
 
