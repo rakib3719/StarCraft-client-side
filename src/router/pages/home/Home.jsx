@@ -5,6 +5,7 @@ import Catagory from "../../../component/catagory/Catagory";
 import Craft from "../../../component/craft/Craft";
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Navbar from "../../../component/navbar/Navbar";
+import Tastomonial from "../../../component/customerTestomonial/Tastomonial";
 
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
         >
 
           <Navbar></Navbar>
- <div  className="  w-[96%] mx-w-[1220px] md:mt-2 left-8 md:top-20  md:absolute lg:top-28 z-10 md:w-[90%] mx-auto  ">
+ <div  className="  w-[96%] mx-w-[1220px] md:mt-2 left-8 md:top-20  md:fixed lg:top-28 z-10 md:w-[90%] mx-auto  ">
  <DarkModeSwitch
       style={{ 
  
@@ -36,8 +37,11 @@ const Home = () => {
   
   <Banner></Banner>
   <Craft></Craft>
-  <About></About>
+
+
   <Catagory></Catagory>
+  <About></About>
+  <Tastomonial></Tastomonial>
 
   
   

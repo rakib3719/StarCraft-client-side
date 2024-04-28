@@ -1,6 +1,6 @@
 
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../provider/AuthProvider";
@@ -8,6 +8,7 @@ import Navbar from "../component/navbar/Navbar";
 
 
 const Registar = () => {
+  const    navigate = useNavigate()
 const {updatesProfile, registar} = useContext(AuthContext)
     const regiHandle = e => {
         e.preventDefault();
@@ -47,6 +48,9 @@ registar(email,password)
       console.log(error);
       });
       toast("Registration Successfully")
+      setTimeout(()=>{
+        navigate('/')
+    }, 2000)
 
 })
 .catch((error) => {
@@ -70,7 +74,7 @@ registar(email,password)
            <div  className="regbg pt-20 pb-20">
       
            <ToastContainer></ToastContainer>
-      <div className="login mx-auto w-[80%] md:w-1/2 md:ml-auto p-8 text-white backdrop-blur-3xl md:backdrop-blur-none md:mr-16 ">
+      <div className="login mx-auto w-[85%] md:w-1/2 md:ml-auto p-8 text-white backdrop-blur-3xl md:backdrop-blur-none md:mr-16 ">
 
       <form onSubmit={ regiHandle} >
 
@@ -99,7 +103,7 @@ registar(email,password)
 <span className="label-text text-white font-semibold">Email</span>
 
 </div>
-<input required type="email" name="email" placeholder="Enter Your Email" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input required type="email" name="email" placeholder="Enter Your Email" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]"  />
 <div className="label">
 
 </div>
@@ -124,7 +128,7 @@ registar(email,password)
 <span className="label-text text-white font-semibold">Password</span>
 
 </div>
-<input required type="text" name="password" placeholder="Enter Your Password" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input required type="password" name="password" placeholder="Enter Your Password" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>

@@ -7,10 +7,16 @@ import {  Slide, Zoom } from "react-awesome-reveal";
 const Craft = () => {
 
 const [craftData, setCraftData] = useState([])
+const [loader, setLoader] = useState(true)
     useEffect(()=>{
 fetch('http://localhost:5000/craft')
 .then(res => res.json())
-.then(data => setCraftData(data))
+.then(data =>{ setCraftData(data)
+
+    setLoader(false)
+}
+
+)
 
 
     },[])
@@ -22,14 +28,14 @@ fetch('http://localhost:5000/craft')
         
           <div  className="text-center">
           <Slide duration={2000} >
-          <h1 className="font-raleway text-3xl font-bold"> Our some Products </h1>
+          <h1 className="font-raleway text-3xl font-bold"> Our some Crafts Item </h1>
           </Slide>
           <Zoom duration={2000} delay={500}>  
             <p  className="font-work-sense text-">Our professionalism, good service & trust to the home repair maintenance business.</p></Zoom>
             </div>
     
             {
-                craftData.length < 1 && <div className="text-center flex mt-16 justify-center w-[100%]">
+               loader && <div className="text-center flex mt-16 justify-center w-[100%]">
 
 
 <span className="loading loading-bars loading-xs"></span>

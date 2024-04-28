@@ -6,7 +6,7 @@ import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
     return (
-        <div className=" bg-[#3B2E2EFC] pb-4 "  >
+        <div className=" bg-[#3B2E2EFC] pb-4 mt-8"  >
            <div   className="w-[94%]   md:w-[90%] mx-w-[1220px] mx-auto">
 
 

@@ -27,7 +27,7 @@ const About = () => {
             <div className="mt-16 flex-col-reverse md:flex-row  flex gap-16  items-center" >
 
 
-<img src={img} className=' w-[50%]' alt="" />
+<img src={img} className=' md:w-[50%]' alt="" />
 <div className='flex-1 text-center md:text-left'>
 
 <Fade  duration={2000}>

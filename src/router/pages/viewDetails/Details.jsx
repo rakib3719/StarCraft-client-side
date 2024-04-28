@@ -12,30 +12,23 @@ import Navbar from "../../../component/navbar/Navbar";
 const Details = () => {
 const craftData= useLoaderData()
 
-    const {items_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price} = craftData;
+    const {items_name,email,user_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price} = craftData;
+    console.log(craftData);
     return (
        <div>
         <Navbar></Navbar>
-         <div className="w-[96%] mt-12 md:w-[90%] mx-w-[1220px] mx-auto">
-     {
-            craftData.length < 1 && <div className="text-center flex mt-16 justify-center w-[100%]">
+         <div className="w-[96%] mb-8 mt-8 md:w-[90%] mx-w-[1220px] mx-auto">
 
+<div className="lg:flex lg:gap-8  border-2 px-2 sm:px-4 rounded-xl py-8">
 
-<span className="loading loading-bars loading-xs"></span>
-<span className="loading loading-bars loading-sm"></span>
-<span className="loading loading-bars loading-md"></span>
-<span className="loading loading-bars loading-lg"></span>
-                </div>
-            }
-
-<div className="flex gap-8  border-2 px-4 rounded-xl py-8">
-
-<div  className="w-1/2 flex ">
+<div  className="lg:w-1/2 flex ">
 
 <img src={photo}  className="rounded-md border-2 w-full" alt="" />
 
 </div>
-<div className="bg-black rounded-md px-10 py-14 w-1/2 space-y-2">
+
+
+<div className="bg-black rounded-md px-4 sm:px-10 py-8 lg:w-1/2 space-y-2">
     {/*   
     bg-[#4F847B, #847B4F] */}
 
@@ -46,12 +39,12 @@ const craftData= useLoaderData()
 <h2   className="text-xl font-poppoins gap-2 text-white flex items-center"> <FaBangladeshiTakaSign className="text-white"/> {price} </h2>
 
 
-<h1  className="font-raleway text-2xl pt-8  text-white font-semibold ">Description</h1>
+<h1  className="font-raleway text-2xl   text-white font-semibold ">Description</h1>
 <hr className=""/>
 <p className="text-white font-work-sense">{description}</p>
 
 
-<div  className="flex justify-between">
+<div  className="sm:flex justify-between">
 
     <div className="mt-8">  
 
@@ -76,6 +69,12 @@ customization==='yes' ? <FaCheckSquare className="text-[#3434ff] text-xl flex te
 <hr className="mt-2"/>
 <p  className="text-white p-2 text-center rounded-3xl mt-2 bg-[#26272A]">{rating}</p>
  </div>
+
+
+</div>
+<div className="pt-2">
+<h1  className="text-white mt-2 font-raleway italic font-semibold"> Added By {user_name} </h1>
+<h1   className="text-white mt-2 font-raleway italic font-semibold">Email: {email}</h1>
 
 </div>
 </div>

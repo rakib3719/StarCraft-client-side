@@ -73,7 +73,7 @@ console.log(user);
 <span className="label-text text-white font-semibold">Email</span>
 
 </div> 
-<input defaultValue={user.email} type="text" name="email" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input defaultValue={user.email} type="text" name="email" placeholder="Type here Email" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -83,7 +83,7 @@ console.log(user);
 <span className="label-text text-white font-semibold">User Name</span>
 
 </div> 
-<input defaultValue={user.displayName} type="text" name="user_name" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input defaultValue={user.displayName} type="text" name="user_name" placeholder="Type here User Name" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -101,7 +101,7 @@ console.log(user);
 
 </div>
 
-<input type="text" name="name" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" name="name" placeholder="Type here Item Name" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -113,7 +113,7 @@ console.log(user);
 
 </div>
 
-<input type="number" name="price" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="number" name="price" placeholder="Type here Price" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -122,20 +122,11 @@ console.log(user);
 </div>
 <div className="md:flex mt-8 gap-8">
 
-{/* <label className="form-control w-full ">
-<div className="label">
-<span className="label-text text-white font-semibold">Product Price</span>
 
-</div>
-<input type="text" name="price" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
-<div className="label">
-
-</div>
-</label> */}
 
 <label className="form-control w-full ">
 <div className="label">
-<span className="label-text text-white font-semibold">Category Name
+<span className="label-text text-white font-semibold">Sub-Category Name
 </span>
 
 </div>
@@ -143,7 +134,7 @@ console.log(user);
 
 
 <select name="catagory" className=" input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
-<option value=""></option>
+
 <option value="Wooden Furniture & Sculptures"> 1.Wooden Furniture & Sculptures
 </option>
 <option value="Wooden Home Decor"> 2. Wooden Home Decor
@@ -175,7 +166,7 @@ console.log(user);
 </span>
 
 </div>
-<input type="text" name="description" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" name="description" placeholder="Type here Description" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -194,7 +185,7 @@ console.log(user);
 <span className="label-text text-white font-semibold">Rating</span>
 
 </div>
-<input type="number" name="rating" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="number" name="rating" placeholder="Type here Rating" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -205,10 +196,9 @@ console.log(user);
 <span className="label-text text-white font-semibold">Customization</span>
 
 </div>
-{/* <input type="text" name="price" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" /> */}
 
 <select name="customization" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
-<option value=""></option>
+
 <option value="yes"> Yes </option>
 <option value="no"> No </option>
 
@@ -231,7 +221,7 @@ console.log(user);
 
 </div>
 
-<input type="text" name="time" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" name="time" placeholder="Type here Processing Time" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -245,7 +235,7 @@ console.log(user);
 
 
 <select name="stock" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
-<option value=""></option>
+
 <option value="In Stoc">  In stock </option>
 <option value="Made to Order">  Made to Order </option>
 
@@ -264,11 +254,11 @@ console.log(user);
 
 <label className="form-control w-full  ">
 <div className="label">
-<span className="label-text text-white font-semibold">Photo-URL</span>
+<span className="label-text text-white font-semibold">Image-URL</span>
 
 </div>
 
-<input type="text" name="photo" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" name="photo" placeholder="Type here Image URL" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 
 </label>
 

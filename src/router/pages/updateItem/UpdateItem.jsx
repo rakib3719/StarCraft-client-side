@@ -76,7 +76,7 @@ if(data.acknowledged){
 
 </div>
 
-<input defaultValue={items_name} type="text" name="name" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input defaultValue={items_name} type="text" name="name" placeholder="Type here Item Name" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -88,7 +88,7 @@ if(data.acknowledged){
 
 </div>
 
-<input type="number" defaultValue={price} name="price" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="number" defaultValue={price} name="price" placeholder="Type here Price" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -101,7 +101,7 @@ if(data.acknowledged){
 
 <label className="form-control w-full ">
 <div className="label">
-<span className="label-text text-white font-semibold">Category Name
+<span className="label-text text-white font-semibold">Sub-Category Name
 </span>
 
 </div>
@@ -109,7 +109,7 @@ if(data.acknowledged){
 
 
 <select defaultValue={catagory}  name="catagory" className=" input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
-<option value=""></option>
+
 <option value="Wooden Furniture & Sculptures" className="text-black"> 1.Wooden Furniture & Sculptures
 </option>
 <option value=" Wooden Home Decor" className="text-black"> 2. Wooden Home Decor
@@ -142,7 +142,7 @@ if(data.acknowledged){
 </span>
 
 </div>
-<input type="text" defaultValue={description} name="description" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" defaultValue={description} name="description" placeholder="Type here Description" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -161,7 +161,7 @@ if(data.acknowledged){
 <span className="label-text text-white font-semibold">Rating</span>
 
 </div>
-<input type="number" defaultValue={rating} name="rating" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="number" defaultValue={rating} name="rating" placeholder="Type here Rating" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -174,8 +174,7 @@ if(data.acknowledged){
 </div>
 
 
-<select defaultValue={customization} name="customization" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
-<option value=""></option>
+<select defaultValue={customization} name="customization" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]"   id="">
 <option value="yes" className="text-black"> Yes </option>
 <option value="no" className="text-black"> No </option>
 
@@ -198,7 +197,7 @@ if(data.acknowledged){
 
 </div>
 
-<input type="text" defaultValue={prosessing_time} name="time" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" defaultValue={prosessing_time} name="time" placeholder="Type here Processing Time" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 <div className="label">
 
 </div>
@@ -212,7 +211,7 @@ if(data.acknowledged){
 
 
 <select defaultValue={stock_status} name="stock" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
-<option value=""></option>
+
 <option value="In Stoc" className="text-black">  In stock </option>
 <option value="Made to Order" className="text-black">  Made to Order </option>
 
@@ -231,18 +230,18 @@ if(data.acknowledged){
 
 <label className="form-control w-full  ">
 <div className="label">
-<span className="label-text text-white font-semibold">Photo-URL</span>
+<span className="label-text text-white font-semibold">Image-URL</span>
 
 </div>
 
-<input type="text" defaultValue={photo} name="photo" placeholder="Type here" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+<input type="text" defaultValue={photo} name="photo" placeholder="Type here Image-URL" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
 
 </label>
 
 
 </div>
 
-<button  className="w-full text-white font-bold mt-8 px-2 py-2 border-2 border-[#EFEFEF] rounded-2xl"><input type="submit" value="ADD Product" /></button>
+<button  className="w-full text-white font-bold mt-8 px-2 py-2 border-2 border-[#EFEFEF] rounded-2xl"><input type="submit" value="Update" /></button>
 </form>
 </div>
   </div>

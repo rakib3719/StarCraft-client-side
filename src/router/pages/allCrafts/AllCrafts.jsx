@@ -5,12 +5,15 @@ import Navbar from "../../../component/navbar/Navbar";
 
 const AllCrafts = () => {
     const [Alldata, setAllData] = useState([])
+    const [loader, setLoader] =  useState(true)
 
 
     useEffect(()=>{
 fetch('http://localhost:5000/craft')
 .then(res => res.json())
-.then(data => setAllData(data))
+.then(data =>{ setAllData(data)
+  setLoader(false)
+})
 
 
     },[])
@@ -18,10 +21,10 @@ fetch('http://localhost:5000/craft')
       <div>
 <Navbar></Navbar>
 <div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
-         
+         <h1  className="text-center text-3xl font-raleway font-bold mb-16">Are all the items in here--</h1>
 
          {
-                 Alldata.length < 1 ? <div className="text-center flex mt-32 justify-center w-[100%]">
+              loader ? <div className="text-center flex mt-32 justify-center w-[100%]">
          
          
          <span className="loading loading-bars loading-xs"></span>
