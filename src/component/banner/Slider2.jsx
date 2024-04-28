@@ -7,7 +7,7 @@ const Slider2 = () => {
             <div className="hero min-h-screen" style={{backgroundImage: `url(${bg})`}}>
   <div className="hero-overlay bg-opacity-50"></div>
   <div className=" text-neutral-content">
-    <div className="sm:w-[70%] ml-8 sm:ml-16">
+    <div className="sm:w-[70%] py-12 ml-4 md:ml-8  sm:ml-16">
       <h1 className="mb-5 text-2xl sm:text-3xl lg:text-5xl font-bold">  Artisan Wooden Masterpieces Echo a Tradition of Timeless EleganceElegance </h1>
       <p className="mb-5 w-[80%] ">
 

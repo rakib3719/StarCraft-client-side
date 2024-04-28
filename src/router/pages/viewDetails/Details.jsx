@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { FaCheckSquare } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
+import Navbar from "../../../component/navbar/Navbar";
 
 
 
@@ -13,7 +14,9 @@ const craftData= useLoaderData()
 
     const {items_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price} = craftData;
     return (
-        <div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
+       <div>
+        <Navbar></Navbar>
+         <div className="w-[96%] mt-12 md:w-[90%] mx-w-[1220px] mx-auto">
      {
             craftData.length < 1 && <div className="text-center flex mt-16 justify-center w-[100%]">
 
@@ -81,6 +84,7 @@ customization==='yes' ? <FaCheckSquare className="text-[#3434ff] text-xl flex te
 </div>
 
         </div>
+       </div>
     );
 };
 

@@ -87,9 +87,9 @@ const [isOpen, setIsOpen] = useState(false)
           data-tooltip-id="my-tooltip"
           data-tooltip-content="Click me!"
           onMouseEnter={() => setIsOpen(true)}
-          onClick={() => setIsOpen(false)} 
+          onClick={() => setIsOpen(!isOpen)} 
           
-          src={user.photoURL} className="w-10 sm:w-12 mt-2 rounded-full h-10 sm:h-12 border-2 border-orange-600" alt="" /> :<FaUser className="sm:text-3xl " 
+          src={user.photoURL} className="w-10 sm:w-12 mt-2 rounded-full h-10 sm:h-12 border-2 border-[#ffe45e]" alt="" /> :<FaUser className="sm:text-3xl " 
           
           data-tooltip-id="my-tooltip"
           data-tooltip-content="Click me!"

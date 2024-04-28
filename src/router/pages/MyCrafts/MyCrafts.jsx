@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../provider/AuthProvider";
 import MyCraftCard from "../../../component/mycraftsCard/MyCraftCard";
 import Swal from 'sweetalert2';
+import Navbar from "../../../component/navbar/Navbar";
 
 const MyCrafts = () => {
 
@@ -46,7 +47,9 @@ const deleteHandle = (id) => {
   };
   
     return (
-        <div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
+       <div>
+<Navbar></Navbar>
+<div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
          <h1  className="text-center text-3xl font-raleway font-bold"> My Crafts List </h1>
 
 
@@ -79,6 +82,7 @@ const deleteHandle = (id) => {
 </div>
 
         </div>
+       </div>
     );
 };
 

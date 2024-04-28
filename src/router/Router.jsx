@@ -10,6 +10,7 @@ import AllCrafts from "./pages/allCrafts/AllCrafts";
 import Details from "./pages/viewDetails/Details";
 import UpdateItem from "./pages/updateItem/UpdateItem";
 import CatagoryItems from "./pages/catagoryItems/CatagoryItems";
+import Error from "./pages/error/Error";
 
 const router = createBrowserRouter([
 
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     {
         path:'/',
         element:<Root></Root>,
-        errorElement:<p>404</p>,
+        errorElement:<Error></Error>,
         children:[
 
 {
