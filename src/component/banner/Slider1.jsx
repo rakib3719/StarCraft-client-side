@@ -1,5 +1,6 @@
 import bg from '../../assets/banner4.jpg'
 
+
 const Slider1 = () => {
     return (
         <div>

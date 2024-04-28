@@ -65,7 +65,7 @@ console.log(user);
 
 <div  className="add-form-bg w-[80%] mx-auto p-8 ">
 <form onSubmit={addHandle} className="" >
-<h1 className="txt-3xl font-bold text-center text-white ">Add Your Products</h1>
+<h1 className="txt-3xl font-bold text-center text-white ">Add Your Craft Item</h1>
 <div className="md:flex gap-8 mt-8">
 
 <label className="form-control w-full ">
