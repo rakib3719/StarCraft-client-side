@@ -12,6 +12,7 @@ const Home = () => {
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
   };
+  console.log(import.meta.env.VITE_PASS);
     return (
       
         <div data-theme = { isDarkMode && 'dark' }

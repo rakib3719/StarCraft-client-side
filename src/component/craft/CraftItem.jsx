@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const CraftItem = ({craftData}) => {
-    console.log(craftData);
+
     const {items_name, photo , _id, stock_status, prosessing_time,  catagory, price}  = craftData
     return (
         <div>

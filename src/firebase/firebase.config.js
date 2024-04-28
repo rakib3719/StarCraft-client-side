@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDBrTvcMMQAxCxCk1mKjB7geo87l5KkDGI",
-  authDomain: "starcraft-1.firebaseapp.com",
-  projectId: "starcraft-1",
-  storageBucket: "starcraft-1.appspot.com",
-  messagingSenderId: "534172222846",
-  appId: "1:534172222846:web:8eeba70d18eb12432edf2f"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAFINGID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

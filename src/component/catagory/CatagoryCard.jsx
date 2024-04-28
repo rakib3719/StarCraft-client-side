@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const CatagoryCard = ({catagoryData}) => {
-    console.log(catagoryData);
+
 
     const {category_name, description, finish,  photo,style
         } = catagoryData;
