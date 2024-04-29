@@ -59,7 +59,7 @@ const router = createBrowserRouter([
   
     path:'/details/:id',
     element:  <PrivateRouteer> <Details></Details> </PrivateRouteer> ,
-    loader:({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+    loader:({params})=> fetch(`https://star-craft-server-site.vercel.app/details/${params.id}`)
     
 },
 
@@ -68,15 +68,15 @@ path:'/update/:id',
 element:<PrivateRouteer>
     <UpdateItem></UpdateItem>
 </PrivateRouteer>,
-loader:({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+loader:({params})=> fetch(`https://star-craft-server-site.vercel.app/details/${params.id}`)
 },
 
 {
-    // http://localhost:5000/catagory_items/Jute%20and%20wooden%20jewellery
+    // https://star-craft-server-site.vercel.app/catagory_items/Jute%20and%20wooden%20jewellery
 
     path:'/catagory_items/:category_name',
     element: <CatagoryItems></CatagoryItems>,
-loader:({params})=> fetch(`http://localhost:5000/catagory_items/${params.category_name}`)
+loader:({params})=> fetch(`https://star-craft-server-site.vercel.app/catagory_items/${params.category_name}`)
 
 }
 

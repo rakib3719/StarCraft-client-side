@@ -28,7 +28,7 @@ const{items_name, photo , stock_status, prosessing_time, customization, rating,_
         
         const itemsInfo = {   items_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price};
     console.log(itemsInfo);
-    fetch(`http://localhost:5000/update/${_id}`, {
+    fetch(`https://star-craft-server-site.vercel.app/update/${_id}`, {
 
 
     method:'PUT',
@@ -112,16 +112,15 @@ if(data.acknowledged){
 
 <option value="Wooden Furniture & Sculptures" className="text-black"> 1.Wooden Furniture & Sculptures
 </option>
-<option value=" Wooden Home Decor" className="text-black"> 2. Wooden Home Decor
+<option value="Wooden Home Decor" className="text-black"> 2. Wooden Home Decor
 </option>
-<option value="  Wooden Utensils and Kitchenware" className="text-black"> 3.  Wooden Utensils and Kitchenware
+<option value="Wooden Utensils and Kitchenware" className="text-black"> 3.  Wooden Utensils and Kitchenware
 </option>
-<option value="  Jute Home Decor" className="text-black"> 4.  Jute Home Decor
+<option value="Jute Home Decor" className="text-black"> 4.  Jute Home Decor
 </option>
-<option value="   Jute Kitchenware & utensils" className="text-black"> 5.   Jute Kitchenware & utensils
+<option value="Jute Kitchenware & utensils" className="text-black"> 5.   Jute Kitchenware & utensils
 </option>
-<option value="   Jute and wooden jewellery
-" className="text-black"> 6.   Jute and wooden jewellery
+<option value="Jute and wooden jewellery" className="text-black"> 6.   Jute and wooden jewellery
 
 </option>
 

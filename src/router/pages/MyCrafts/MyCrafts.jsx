@@ -12,7 +12,7 @@ const [loader, setLoader] = useState(true)
 const [craftsData, setCraftsData] = useState([])
 useEffect(()=>{
 
-    fetch(`http://localhost:5000/craft/${user.email}`)
+    fetch(`https://star-craft-server-site.vercel.app/craft/${user.email}`)
 .then(res => res.json())
 .then(data => {setCraftsData(data)
 
@@ -21,7 +21,7 @@ setLoader(false)
 },[])
 
 const all = ()=>{
-  fetch(`http://localhost:5000/craft/${user.email}`)
+  fetch(`https://star-craft-server-site.vercel.app/craft/${user.email}`)
 .then(res => res.json())
 .then(data => {setCraftsData(data)
   setLoader(false)
@@ -32,7 +32,7 @@ const all = ()=>{
 }
 const customizable = ()=>{
 
-  fetch(`http://localhost:5000/customization/${user.email}`)
+  fetch(`https://star-craft-server-site.vercel.app/customization/${user.email}`)
 .then(res => res.json())
 .then(data => {setCraftsData(data)
 
@@ -44,7 +44,7 @@ const customizable = ()=>{
 const nonCustomizable = ()=>{
 
 
-fetch(`http://localhost:5000/customization_not/${user.email}`)
+fetch(`https://star-craft-server-site.vercel.app/customization_not/${user.email}`)
 .then(res => res.json())
 .then(data => {setCraftsData(data)
 
@@ -65,7 +65,7 @@ const deleteHandle = (id) => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://star-craft-server-site.vercel.app/delete/${id}`, {
           method: 'DELETE'
         })
         .then(res => res.json())

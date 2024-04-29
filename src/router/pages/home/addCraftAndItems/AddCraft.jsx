@@ -29,7 +29,7 @@ console.log(user);
         const productInfo = {    email, user_name ,items_name, photo , stock_status, prosessing_time, customization, rating, description, catagory, price};
         
         console.log(productInfo);
-      fetch('http://localhost:5000/add_craft',{
+      fetch('https://star-craft-server-site.vercel.app/add_craft',{
 
       method:'POST',
    headers: {

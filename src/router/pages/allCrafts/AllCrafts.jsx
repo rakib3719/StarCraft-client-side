@@ -9,7 +9,7 @@ const AllCrafts = () => {
 
 
     useEffect(()=>{
-fetch('http://localhost:5000/craft')
+fetch('https://star-craft-server-site.vercel.app/craft')
 .then(res => res.json())
 .then(data =>{ setAllData(data)
   setLoader(false)

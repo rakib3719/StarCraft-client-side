@@ -9,7 +9,7 @@ const Craft = () => {
 const [craftData, setCraftData] = useState([])
 const [loader, setLoader] = useState(true)
     useEffect(()=>{
-fetch('http://localhost:5000/craft')
+fetch('https://star-craft-server-site.vercel.app/craft')
 .then(res => res.json())
 .then(data =>{ setCraftData(data)
 

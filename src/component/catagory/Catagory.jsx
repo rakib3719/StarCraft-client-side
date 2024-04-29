@@ -8,7 +8,7 @@ const Catagory = () => {
 const [catagoryData, setCatagoryData] = useState([])
 const [loader, setLoader] = useState(true)
     useEffect(()=>{
-fetch('http://localhost:5000/category')
+fetch('https://star-craft-server-site.vercel.app/category')
 .then(res => res.json()
 .then(data => {setCatagoryData(data)
 
