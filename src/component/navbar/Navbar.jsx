@@ -37,7 +37,7 @@ const [isOpen, setIsOpen] = useState(false)
 
     return (
         <div   className="navbar w-[96%] md:w-[90%] mx-auto mx-w-[1220px]  z-10 relative">
-        <div className="navbar bg-base-100">
+        <div className="navbar ">
  <div className="navbar-start">
    <div className="dropdown">
      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

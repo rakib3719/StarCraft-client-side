@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../../../provider/AuthProvider";
 import Swal from "sweetalert2";
-import Navbar from "../../../../component/navbar/Navbar";
+// import Navbar from "../../../../component/navbar/Navbar";
 
 
 
@@ -60,7 +60,7 @@ console.log(user);
       
        <div>
 
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
          <div   className="addBg py-24">
 
 <div  className="add-form-bg w-[80%] mx-auto p-8 ">

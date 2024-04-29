@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../../../component/navbar/Navbar";
+// import Navbar from "../../../component/navbar/Navbar";
 
 
 const AllCrafts = () => {
@@ -19,7 +19,7 @@ fetch('https://star-craft-server-site.vercel.app/craft')
     },[])
     return (
       <div>
-<Navbar></Navbar>
+{/* <Navbar></Navbar> */}
 <div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
          <h1  className="text-center text-3xl font-raleway font-bold mb-16">Are all the items in here--</h1>
 

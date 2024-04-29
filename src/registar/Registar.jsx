@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../provider/AuthProvider";
-import Navbar from "../component/navbar/Navbar";
+// import Navbar from "../component/navbar/Navbar";
 
 
 const Registar = () => {
@@ -69,7 +69,7 @@ registar(email,password)
     }
     return (
         <div>
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
               
            <div  className="regbg pt-20 pb-20">
       

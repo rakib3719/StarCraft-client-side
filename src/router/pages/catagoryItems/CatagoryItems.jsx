@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import SingleCatagoryItems from "./SingleCatagoryItems";
-import Navbar from "../../../component/navbar/Navbar";
+// import Navbar from "../../../component/navbar/Navbar";
 
 
 
@@ -10,7 +10,7 @@ const CatagoryItems = () => {
     console.log(data);
     return (
       <div>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
           <div  className="w-[96%] mt-12 md:w-[90%] mx-w-[1220px] mx-auto"> 
 
 

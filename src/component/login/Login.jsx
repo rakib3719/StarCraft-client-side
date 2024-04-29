@@ -3,7 +3,7 @@ import {  FaGoogle, FaTwitter } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
-import Navbar from "../navbar/Navbar";
+// import Navbar from "../navbar/Navbar";
 
 const Login = () => {
   const {login,  loginWithTwiter,   loginWithGoogle} = useContext(AuthContext)
@@ -61,7 +61,7 @@ const twiterLogin = ()=> {
     }
     return (
       <div>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
           <div  className="loginbg pt-20 pb-20">
       
       <ToastContainer></ToastContainer>

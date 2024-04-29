@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
-import Navbar from "../../../component/navbar/Navbar";
+// import Navbar from "../../../component/navbar/Navbar";
 
 
 
@@ -57,7 +57,7 @@ if(data.acknowledged){
     }
     return (
       <div>
-<Navbar></Navbar>
+{/* <Navbar></Navbar> */}
 
 <div   className="updatepage py-24">
 

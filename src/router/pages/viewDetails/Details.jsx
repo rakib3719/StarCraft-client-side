@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { FaCheckSquare } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
-import Navbar from "../../../component/navbar/Navbar";
+// import Navbar from "../../../component/navbar/Navbar";
 
 
 
@@ -16,7 +16,7 @@ const craftData= useLoaderData()
     console.log(craftData);
     return (
        <div>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
          <div className="w-[96%] mb-8 mt-8 md:w-[90%] mx-w-[1220px] mx-auto">
 
 <div className="lg:flex lg:gap-8  border-2 px-2 sm:px-4 rounded-xl py-8">
