@@ -236,7 +236,7 @@ console.log(user);
 
 <select name="stock" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
 
-<option value="In Stoc">  In stock </option>
+<option value="In Stock">  In stock </option>
 <option value="Made to Order">  Made to Order </option>
 
 </select>

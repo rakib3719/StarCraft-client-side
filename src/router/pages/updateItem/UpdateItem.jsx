@@ -211,7 +211,7 @@ if(data.acknowledged){
 
 <select defaultValue={stock_status} name="stock" className="input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-[10px] border-2 border-[#EFEFEF]" id="">
 
-<option value="In Stoc" className="text-black">  In stock </option>
+<option value="In Stock" className="text-black">  In stock </option>
 <option value="Made to Order" className="text-black">  Made to Order </option>
 
 </select>
