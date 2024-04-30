@@ -31,11 +31,11 @@ const Home = () => {
         />
       </div>
 
-      <Banner />
-      <Craft />
-      <Catagory />
-      <About />
-      <Tastomonial />
+      <Banner></Banner>
+      <Craft></Craft>
+      <Catagory></Catagory>
+      <About></About>
+      <Tastomonial></Tastomonial>
     </div>
   );
 };
