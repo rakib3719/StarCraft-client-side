@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../../../provider/AuthProvider";
 import Swal from "sweetalert2";
 // import Navbar from "../../../../component/navbar/Navbar";
@@ -6,6 +6,10 @@ import Swal from "sweetalert2";
 
 
 const AddCraft = () => {
+  useEffect(()=>{
+    document.querySelector("html").setAttribute("data-theme", "light");
+
+  },[])
 const {user} = useContext(AuthContext)
 console.log(user);
     const addHandle = e =>{
@@ -60,10 +64,10 @@ console.log(user);
       
        <div>
 
-        {/* <Navbar></Navbar> */}
+      
          <div   className="addBg py-24">
 
-<div  className="add-form-bg w-[80%] mx-auto p-8 ">
+<div  className="add-form-bg w-[80%] max-w-[1620px]  mx-auto p-8  ">
 <form onSubmit={addHandle} className="" >
 <h1 className="txt-3xl font-bold text-center text-white ">Add Your Craft Item</h1>
 <div className="md:flex gap-8 mt-8">

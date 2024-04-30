@@ -2,9 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../provider/AuthProvider";
 import MyCraftCard from "../../../component/mycraftsCard/MyCraftCard";
 import Swal from 'sweetalert2';
-// import Navbar from "../../../component/navbar/Navbar";
+
 
 const MyCrafts = () => {
+  useEffect(()=>{
+    document.querySelector("html").setAttribute("data-theme", "light");
+
+  },[])
 
 
 const [loader, setLoader] = useState(true)
@@ -86,9 +90,9 @@ const deleteHandle = (id) => {
   };
   
     return (
-       <div>
-{/* <Navbar></Navbar> */}
-<div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
+       <div className="mb-8">
+
+<div className="w-[96%] mt-20 md:w-[90%] max-w-[1620px] mx-auto">
          <h1  className="text-center text-3xl font-raleway font-bold"> My Crafts List </h1>
 
        

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 // import Navbar from "../../../component/navbar/Navbar";
@@ -6,6 +7,10 @@ import Swal from "sweetalert2";
 
 
 const UpdateItem = () => {
+  useEffect(()=>{
+    document.querySelector("html").setAttribute("data-theme", "light");
+
+  },[])
     const craftsData= useLoaderData()
 const{items_name, photo , stock_status, prosessing_time, customization, rating,_id, description, catagory, price} = craftsData
 

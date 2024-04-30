@@ -20,7 +20,7 @@ fetch('https://star-craft-server-site.vercel.app/category')
 
     },[])
     return (
-        <div  className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
+        <div  className="w-[96%] mt-20 md:w-[90%] max-w-[1620px] mx-auto">
 
 
 <Slide  duration={2000}>

@@ -16,7 +16,7 @@ import { Slide, Zoom } from 'react-awesome-reveal';
 
 const Tastomonial = () => {
     return (
-        <div    className="w-[96%] pb-16 mt-28 md:w-[90%] mx-w-[1220px] mx-auto">
+        <div    className="w-[96%] pb-16 mt-28 md:w-[90%] max-w-[1620px] mx-auto">
 
         <Slide   duration={2000}>
 
@@ -59,9 +59,9 @@ autoplay={{
 
 >
 <SwiperSlide   > 
-    <div  className='bg-white rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
+    <div  className='bg-white  rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
 
-        <p  className=' md:w-[80%] mx-auto p-4 md:p-8 '>"StarCraft's wooden furniture blends functionality with artistry, while their eco-friendly jute kitchenware brings warmth to every meal. Highly recommended for their artisanal touch!"</p>
+        <p  className='text-[#585b4a] md:w-[80%] mx-auto p-4 md:p-8 '>"StarCraft's wooden furniture blends functionality with artistry, while their eco-friendly jute kitchenware brings warmth to every meal. Highly recommended for their artisanal touch!"</p>
 
       <div  className='flex flex-col items-center mt-2 pb-8'>
       <img src={customer} alt="" className='w-[80px] rounded-full h-[80px]' />
@@ -84,7 +84,7 @@ autoplay={{
      <SwiperSlide   > 
     <div  className='bg-white rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
 
-        <p  className='w-[80%] mx-auto p-8 '>"StarCraft offers a range of exquisite wooden sculptures and eco-friendly jute decor, making our home uniquely inviting. Their attention to detail sets them apart!"</p>
+        <p  className='w-[80%] text-[#585b4a] mx-auto p-8 '>"StarCraft offers a range of exquisite wooden sculptures and eco-friendly jute decor, making our home uniquely inviting. Their attention to detail sets them apart!"</p>
 
       <div  className='flex flex-col items-center mt-2 pb-8'>
       <img src={customer2} alt="" className='w-[80px] rounded-full h-[80px]' />
@@ -104,7 +104,7 @@ autoplay={{
      </SwiperSlide>
 
      <SwiperSlide   > 
-    <div  className='bg-white rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
+    <div  className='text-[#585b4a] bg-white rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
 
         <p  className='w-[80%] mx-auto p-8 '>StarCraft's wooden utensils and kitchenware combine practicality with natural beauty, enhancing every culinary experience. Exceptional quality and craftsmanship, highly recommended!"</p>
 
@@ -127,7 +127,7 @@ autoplay={{
      <SwiperSlide   > 
     <div  className='bg-white rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
 
-        <p  className='w-[80%] mx-auto p-8 '>"Transform your space with StarCraft's cozy jute home decor, adding rustic charm sustainably. Their pieces have made our home a haven of style and eco-consciousness."</p>
+        <p  className='w-[80%] text-[#585b4a] mx-auto p-8 '>"Transform your space with StarCraft's cozy jute home decor, adding rustic charm sustainably. Their pieces have made our home a haven of style and eco-consciousness."</p>
 
       <div  className='flex flex-col items-center mt-2 pb-8'>
       <img src={customer4} alt="" className='w-[80px] rounded-full h-[80px]' />
@@ -148,7 +148,7 @@ autoplay={{
      <SwiperSlide   > 
     <div className='bg-white rounded-2xl mt-8 lg:rounded-tl-[60px] lg:rounded-br-[60px]'>
 
-        <p  className='w-[80%] mx-auto p-8 '>"Discover elegance and eco-friendliness at StarCraft with their stunning wooden and jute jewelry. Each piece is a work of art, perfect for elevating any outfit. A must-visit!"</p>
+        <p  className='w-[80%] mx-auto text-[#585b4a] p-8 '>"Discover elegance and eco-friendliness at StarCraft with their stunning wooden and jute jewelry. Each piece is a work of art, perfect for elevating any outfit. A must-visit!"</p>
 
       <div  className='flex flex-col items-center mt-2 pb-8'>
       <img src={customer5} alt="" className='w-[80px] rounded-full h-[80px]' />

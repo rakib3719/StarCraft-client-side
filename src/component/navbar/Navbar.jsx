@@ -34,13 +34,13 @@ logOut()
 }
 const [isOpen, setIsOpen] = useState(false)
 
-
+// max-w-[1620px]
     return (
-        <div   className="navbar w-[96%] md:w-[90%] mx-auto mx-w-[1220px]  z-10 relative">
+        <div   className="navbar w-[96%] md:w-[95%] mx-auto max-w-[1620px]  z-10 relative">
         <div className="navbar ">
  <div className="navbar-start">
    <div className="dropdown">
-     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden -ml-4">
        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
      </div>
      <ul tabIndex={0} className="menu menu-md dropdown-content mt-3 z-[1]  shadow bg-base-100 rounded-box w-52">
@@ -74,9 +74,9 @@ const [isOpen, setIsOpen] = useState(false)
 {
 
 
-    !user ? <div className="navbar-end   flex items-center">
+    !user ? <div className="navbar-end  flex items-center">
     <Link  to='/login'>
-     <button  className="btn w-[74px]  text-white bg-[#4F847B]">  Log In </button></Link>
+     <button  className="btn w-[74px] xl:w-[100px]  text-white bg-[#4F847B]">  Log In </button></Link>
     <Link  to='/registar'> <button  className="btn ml-4 text-white bg-[#847B4F]">  Registar </button></Link>
   
     </div>: <div>

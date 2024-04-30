@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 // import Navbar from "../../../component/navbar/Navbar";
 
@@ -17,11 +18,29 @@ fetch('https://star-craft-server-site.vercel.app/craft')
 
 
     },[])
+
+    useEffect(()=>{
+      document.querySelector("html").setAttribute("data-theme", "light");
+
+    },[])
     return (
       <div>
-{/* <Navbar></Navbar> */}
-<div className="w-[96%] mt-20 md:w-[90%] mx-w-[1220px] mx-auto">
-         <h1  className="text-center text-3xl font-raleway font-bold mb-16">Are all the items in here--</h1>
+
+<div className="w-[96%] mt-20 md:w-[90%] max-w-[1620px] mx-auto">
+
+
+
+<div className="w-[96%] mt-20 md:w-[90%] max-w-[1620px] mx-auto">
+  <div className="text-center">
+    <Fade direction="up" triggerOnce>
+      <h1 className="text-3xl font-bold font-raleway mb-6">Explore Our Collection</h1>
+    </Fade>
+   
+  </div>
+
+  {/* Rest of your code here */}
+</div>
+
 
          {
               loader ? <div className="text-center flex mt-32 justify-center w-[100%]">
@@ -34,15 +53,15 @@ fetch('https://star-craft-server-site.vercel.app/craft')
                          </div> :
          
          <div className="overflow-x-auto">
-         <table className="table  table-xs sm:table-sm md:table-md lg:table-lg">
+         <table className="table  table-xs sm:table-sm md:table-md lg:table-lg border border-gray-300">
            {/* head */}
-           <thead>
+           <thead className="bg-[#F3F4F6]">
              <tr>
                <th></th>
-               <th>Item Name </th>
-               <th>Price</th>
-               <th>Stock Status</th>
-               <th>Action</th>
+               <th  className="text-base">Item Name </th>
+               <th className="text-base">Price</th>
+               <th className="text-base">Stock Status</th>
+               <th className="text-base">Details</th>
                
          
              </tr>
@@ -63,7 +82,7 @@ fetch('https://star-craft-server-site.vercel.app/craft')
                    <td>{alldata.price}</td>
                    <td>{alldata.stock_status}</td>
            
-             <td>  <Link  to={`http://localhost:5173/details/${alldata._id}`} ><button  className="rounded  py-2 px-2 text-white text-center bg-[#847B4F]  sm:px-5 sm:py-3 ">View Details</button></Link> </td>
+             <td>  <Link  to={`/details/${alldata._id}`} ><button  className="rounded  py-2 px-2 text-white text-center bg-[#847B4F]  sm:px-5 sm:py-3 ">View Details</button></Link> </td>
                  </tr>)
            }
          

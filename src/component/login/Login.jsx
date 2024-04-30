@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import {  FaGoogle, FaTwitter } from "react-icons/fa";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 // import Navbar from "../navbar/Navbar";
 
 const Login = () => {
+
+  useEffect(()=>{
+    document.querySelector("html").setAttribute("data-theme", "light");
+
+  },[])
+
   const {login,  loginWithTwiter,   loginWithGoogle} = useContext(AuthContext)
   
 

@@ -1,5 +1,5 @@
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,6 +8,11 @@ import { AuthContext } from "../provider/AuthProvider";
 
 
 const Registar = () => {
+
+  useEffect(()=>{
+    document.querySelector("html").setAttribute("data-theme", "light");
+
+  },[])
   const    navigate = useNavigate()
 const {updatesProfile, registar} = useContext(AuthContext)
     const regiHandle = e => {
@@ -74,7 +79,7 @@ registar(email,password)
            <div  className="regbg pt-20 pb-20">
       
            <ToastContainer></ToastContainer>
-      <div className="login mx-auto w-[85%] md:w-1/2 md:ml-auto p-8 text-white backdrop-blur-3xl md:backdrop-blur-none md:mr-16 ">
+      <div className="login mx-auto w-[85%]  max-w-[1620px]  md:w-1/2 md:ml-auto p-8 text-white backdrop-blur-3xl md:backdrop-blur-none md:mr-16 ">
 
       <form onSubmit={ regiHandle} >
 

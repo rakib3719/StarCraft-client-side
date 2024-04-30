@@ -7,7 +7,7 @@ const Error = () => {
     return (
      
 
-        <div className="w-[90%] mt-16 justify-between mx-auto mx-w-[1220px] flex flex-col-reverse md:flex-row  items-center bg-white  ">
+        <div className="w-[90%] mt-16 justify-between mx-auto max-w-[1620px] flex flex-col-reverse md:flex-row  items-center bg-white  ">
                  
         
          <div  className="text-center w-[50%] mx-auto mt-8 md:mt-0">

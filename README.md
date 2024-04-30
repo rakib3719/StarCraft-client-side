@@ -8,12 +8,12 @@
 # selected category
 
 **Jute & wooden Crafts**
-a. Wooden Furniture & Sculptures
-b. Wooden Home Decor
-c. Wooden Utensils and Kitchenware
-d. Jute Home Decor
-e. Jute Kitchenware & utensils
-f. Jute and wooden jewellery
+- a. Wooden Furniture & Sculptures
+- b. Wooden Home Decor
+- c. Wooden Utensils and Kitchenware
+- d. Jute Home Decor
+- e. Jute Kitchenware & utensils
+- f. Jute and wooden jewellery
 
 
 ## About StarCraft
