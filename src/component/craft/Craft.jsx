@@ -23,7 +23,7 @@ fetch('https://star-craft-server-site.vercel.app/craft')
     return (
 // // className="w-[96%] mt-20 md:w-[90%] max-w-[1620px] mx-auto"
 
-        <div className="w-[96%] mt-20 md:w-[90%] max-w-[1620px] mx-auto">
+        <div className="w-[96%] mt-20 md:w-[90%]  max-w-[1620px] mx-auto">
           
         
           <div  className="text-center">

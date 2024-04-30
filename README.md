@@ -16,12 +16,6 @@
 - f. Jute and wooden jewellery
 
 
-## About StarCraft
-
-StarCraft is a website dedicated to showcasing wooden and jute craft products, featuring sustainable designs and eco-friendly solutions.
-
----
-
 ##  Features
 
 1. **Craft Items Showcase:** Explore a wide range of wooden and jute craft items displayed beautifully with detailed information.

@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 const CraftItem = ({craftData}) => {
 
     const {items_name, photo , _id, stock_status, prosessing_time,  catagory, price}  = craftData
@@ -12,7 +13,7 @@ const CraftItem = ({craftData}) => {
         <img src={photo} alt={items_name} className="w-full rounded-xl h-[200px] object-cover" />
       </figure>
       <div className="font-raleway">
-        <h2 className="card-title text-2xl mb-2">{items_name}</h2>
+        <h2 className="card-title lg:text-xl xl:text-2xl text-2xl mb-2">{items_name}</h2>
         <p className="text-sm font-medium text-gray-600">{catagory}</p>
         <p className="text-lg font-semibold text-[#FFA500] mb-2">Price: ${price}</p>
         <p className="text-sm text-gray-600">Stock Status: {stock_status}</p>

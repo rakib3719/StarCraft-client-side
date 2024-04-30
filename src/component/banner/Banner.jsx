@@ -17,7 +17,7 @@ import Slider4 from './Slider4';
 
 const Banner = () => {
     return (
-        <div>
+        <div className='max-w-[1620px] mx-auto'>
 <Swiper 
    modules={[Navigation,Autoplay, Pagination, Scrollbar, A11y]}
 spaceBetween={50}

@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="w-[93%] lg:w-[94%] max-w-[1620px] -mt-2 mx-auto">
+      <div className="w-[93%] md:w-[89%] max-w-[1620px] -mt-2 mx-auto">
         <DarkModeToggle
           onChange={toggleDarkMode}
           checked={isDarkMode}

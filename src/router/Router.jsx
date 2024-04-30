@@ -72,7 +72,6 @@ loader:({params})=> fetch(`https://star-craft-server-site.vercel.app/details/${p
 },
 
 {
-    // https://star-craft-server-site.vercel.app/catagory_items/Jute%20and%20wooden%20jewellery
 
     path:'/catagory_items/:category_name',
     element: <CatagoryItems></CatagoryItems>,

@@ -19,7 +19,7 @@ const SingleCatagoryItems = ({data}) => {
     <hr className="my-2" />
     <p className="text-gray-800 sm:min-h-24">{description}</p>
     <div className="flex justify-between items-center mt-3">
-      <div className="badge badge-primary flex items-center">
+      <div className="badge badge-outline flex items-center">
         <FaBangladeshiTakaSign className="mr-1" /> {price}
       </div>
       <div className="badge badge-secondary flex items-center">

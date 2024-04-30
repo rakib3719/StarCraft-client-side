@@ -16,7 +16,7 @@ const CatagoryItems = () => {
     return (
       <div>
         {/* <Navbar></Navbar> */}
-          <div  className="w-[96%] mt-12 md:w-[90%] max-w-[1620px] mx-auto"> 
+          <div  className="w-[96%] mb-8 mt-12 md:w-[90%] max-w-[1620px] mx-auto"> 
 
 
 <h1 className="text-2xl font-bold text-center font-raleway">  {params.category_name}  </h1>

@@ -4,7 +4,7 @@ import bg from '../../assets/banner4.jpg'
 const Slider1 = () => {
     return (
         <div>
-            <div className="hero h-[600px]" style={{backgroundImage: `url(${bg})`}}>
+            <div className="hero min-h-screen" style={{backgroundImage: `url(${bg})`}}>
   <div className="hero-overlay bg-opacity-50"></div>
   <div className=" text-neutral-content">
     <div className="sm:w-[70%] ml-4 md:ml-8  py-8 sm:ml-16">

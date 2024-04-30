@@ -36,7 +36,7 @@ const [isOpen, setIsOpen] = useState(false)
 
 // max-w-[1620px]
     return (
-        <div   className="navbar w-[96%] md:w-[95%] mx-auto max-w-[1620px]  z-10 relative">
+        <div   className="navbar w-[96%] md:w-[90%] mx-auto max-w-[1620px]  z-10 relative">
         <div className="navbar ">
  <div className="navbar-start">
    <div className="dropdown">

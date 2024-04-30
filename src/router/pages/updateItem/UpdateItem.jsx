@@ -66,9 +66,9 @@ if(data.acknowledged){
 
 <div   className="updatepage py-24">
 
-<div  className="bg-[#5d18715d] w-[80%] mx-auto p-8 ">
-<form onSubmit={addHandle} className="text-gray-100" >
-<h1 className="txt-3xl font-bold text-center text-white ">Update Your Item</h1>
+<div  className="bg-[#4f847bb5] rounded w-[94%] border md:w-[80%] mx-auto p-4 md:p-8 ">
+<form onSubmit={addHandle} className="text-gray-100 font-poppoins" >
+<h1 className="text-2xl font-bold font-raleway text-center text-white ">Update Your Item</h1>
 
 
 
@@ -106,7 +106,7 @@ if(data.acknowledged){
 
 <label className="form-control w-full ">
 <div className="label">
-<span className="label-text text-white font-semibold">Sub-Category Name
+<span className="label-text text-white font-semibold">Subcategory Name
 </span>
 
 </div>
@@ -146,7 +146,15 @@ if(data.acknowledged){
 </span>
 
 </div>
-<input type="text" defaultValue={description} name="description" placeholder="Type here Description" className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]" />
+
+
+
+<textarea  name="description" defaultValue={description}  placeholder="Type here Description"  className="input input-add input-bordered placeholder-[#EFEFEF] rounded-2xl mt-2  w-full bg-transparent outline-none px-2 py-2 border-2 border-[#EFEFEF]">
+
+</textarea>
+
+
+
 <div className="label">
 
 </div>
