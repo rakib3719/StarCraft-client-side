@@ -1,7 +1,6 @@
 # StarCraft 
 
-## Server side repo Link
-[Server side](https://github.com/rakib3719/LearnUp-server-side)
+**Server side:** [Server side Repo](https://github.com/rakib3719/LearnUp-server-side)
 
 
 **Live Site:** [StarCraft](https://starcraft-1.web.app/)
