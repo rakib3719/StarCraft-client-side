@@ -43,7 +43,4 @@ If you wish to clone and run this project locally:
 4. Install dependencies for both frontend and backend.
 5. Start both servers concurrently.
 
-## Contributions
-
-Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
 
